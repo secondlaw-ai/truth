@@ -22,10 +22,64 @@ In the world of decentralized finance and blockchain technology, the accuracy an
 
 The Truth library aims to address these concerns by providing a powerful, LLM-based verification system that can be integrated into UMA and other blockchain-based applications.
 
-## Installation
+## Setup
 
-You can install Truth using pip: 
+### Setting up the environment
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/truth.git
+   cd truth
+   ```
+
+2. Run the setup script:
+   ```
+   chmod +x setup_environment.sh
+   ./setup_environment.sh
+   ```
+
+3. Activate the virtual environment:
+   ```
+   source venv/bin/activate
+   ```
+
+### Configuration
+
+Create a `.env` file in the project root with the following content:
+
 ```
-pip install -e .
+MISTRAL_API_KEY=your_mistral_api_key_here
+BRAVE_API_KEY=your_brave_api_key_here
+ECMWF_API_KEY=your_ecmwf_api_key_here
 ```
+
+Replace the placeholder values with your actual API keys.
+
+## Usage
+
+Here's a basic example of how to use Truth:
+
+```python
+from truth import Verifier
+
+verifier = Verifier()
+result = verifier.verify("The Earth is flat.")
+print(result)
+```
+
+## Running Tests
+
+To run the tests, make sure you're in the project root directory and the virtual environment is activated, then run:
+
+```
+pytest
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
 
