@@ -25,6 +25,7 @@ dependencies = [
   "mistralai",
   "requests",
   "python-dotenv",
+  "discord.py",
 ]
 
 [project.urls]
@@ -33,4 +34,4 @@ Repository = "https://github.com/yourusername/truth.git"
 "Bug Tracker" = "https://github.com/yourusername/truth/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/truth"]
+packages = ["truth"]
