@@ -28,6 +28,7 @@ dependencies = [
   "discord.py",
   "web3",
   "websockets",
+  "rich",
 ]
 
 [project.urls]
