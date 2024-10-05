@@ -24,4 +24,8 @@ The Truth library aims to address these concerns by providing a powerful, LLM-ba
 
 ## Installation
 
-You can install Truth using pip:
+You can install Truth using pip: 
+```
+pip install -e .
+```
+
