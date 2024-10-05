@@ -28,7 +28,7 @@ The Truth library aims to address these concerns by providing a powerful, LLM-ba
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/truth.git
+   git clone https://github.com/secondlaw-ai/truth.git
    cd truth
    ```
 
