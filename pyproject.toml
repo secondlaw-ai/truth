@@ -26,6 +26,8 @@ dependencies = [
   "requests",
   "python-dotenv",
   "discord.py",
+  "web3",
+  "websockets",
 ]
 
 [project.urls]
