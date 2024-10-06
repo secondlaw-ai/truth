@@ -330,7 +330,6 @@ Based on the context, provide a verification result as a JSON object with the fo
 
     def verify_uma_vote(self, contract_description: str, message: Dict[str, str]):
         # if there are links provided, use them to verify the statement
-
         if message["sources"]:
             self.action_plan = self.plan_actions(
                 query="Fetch more context from the sources", links=message["sources"]
@@ -340,7 +339,7 @@ Based on the context, provide a verification result as a JSON object with the fo
 
         # Prepare the context information for the prompt
         context_info = json.dumps(self.context, indent=2)
-        logger.debug(f"Context: {context_info}")
+
         # Prepare the prompt for the language model
         prompt = f"""
 You are an AI agent tasked with verifying whether the P value provided in a UMA vote is correct based on the contract description and the evidence provided.
