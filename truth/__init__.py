@@ -1,5 +1,4 @@
-from .verifier import Verifier
-from . import tools
+from .verifier import VerifierAgent
 
-__all__ = ["Verifier", "tools"]
+__all__ = ["VerifierAgent"]
 __version__ = "0.1.0"

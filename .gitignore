@@ -46,3 +46,6 @@ htmlcov/
 .cache
 coverage.xml
 *.cover
+
+# data
+data/

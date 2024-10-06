@@ -1,3 +1,3 @@
-from .discord_fetcher import DiscordFetcher
+from .discussion_parser import DiscussionParser
 
-__all__ = ["DiscordFetcher"]
+__all__ = ["DiscussionParser"]

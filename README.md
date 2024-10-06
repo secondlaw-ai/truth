@@ -50,7 +50,6 @@ Create a `.env` file in the project root with the following content:
 ```
 MISTRAL_API_KEY=your_mistral_api_key_here
 BRAVE_API_KEY=your_brave_api_key_here
-ECMWF_API_KEY=your_ecmwf_api_key_here
 ```
 
 Replace the placeholder values with your actual API keys.
@@ -60,11 +59,21 @@ Replace the placeholder values with your actual API keys.
 Here's a basic example of how to use Truth:
 
 ```python
-from truth import Verifier
+from truth import VerifierAgent
 
-verifier = Verifier()
-result = verifier.verify("The Earth is flat.")
-print(result)
+verifier = VerifierAgent()
+output = verifier.verify_statement("The Earth is flat.")
+print(
+    f"Result: {output['result']}\nConfidence: {output['confidence']}\nSources: {output['sources']}\nExplanation: {output['explanation']}\n\n"
+)
+```
+```
+>>>
+Result: No
+Confidence: High
+Sources: ['https://en.wikipedia.org/wiki/Flat_Earth', 'https://askanearthspacescientist.asu.edu/top-question/flat-earth', 'https://answersingenesis.org/astronomy/earth/is-the-earth-flat/']
+Explanation: Both the Wikipedia entry and the article from Answers in Genesis provide extensive evidence that the Earth is spherical. This includes historical records dating back to the ancient Greeks, empirical observations such as the curvature of the Earth visible in ship observations and lunar eclipses, as well as modern scientific evidence such as satellite imagery and astronomical measurements.
+
 ```
 
 ## Running Tests

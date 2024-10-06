@@ -26,6 +26,10 @@ dependencies = [
   "requests",
   "python-dotenv",
   "discord.py",
+  "loguru",
+  "wikipedia",
+  "youtube_transcript_api",
+  "beautifulsoup4",
 ]
 
 [project.urls]
