@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/truth.jpg" alt="Truth" width="200"/>
+  <img src="assets/truth_v2.jpg" alt="Truth" width="200"/>
 
 </p>
 
