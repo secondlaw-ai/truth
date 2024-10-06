@@ -1,4 +1,11 @@
-# Truth
+
+<p align="center">
+  <img src="assets/truth.jpg" alt="Truth" width="200"/>
+
+</p>
+
+<h1 style="text-align: center;">Truth</h1>
+
 
 Truth is an open-source library designed to solve oracle problems using LLMs, Brave Search, and UMA (Universal Market Access). It employs LLM agents to verify the authenticity of uploaded data.
 
