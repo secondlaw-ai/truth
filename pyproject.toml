@@ -30,6 +30,7 @@ dependencies = [
   "wikipedia",
   "youtube_transcript_api",
   "beautifulsoup4",
+  "streamlit",
 ]
 
 [project.urls]

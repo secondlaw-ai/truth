@@ -253,7 +253,7 @@ Context (information gathered from actions based on the question):
 
 Note: If the context is insufficient or empty, consider that there may not be enough information to verify the statement. In such cases, you should return "Unknown" as the result.
 
-Based on the context, provide a verification result as a JSON object with the following fields:
+Based on the context, provide a verification result as a short JSON object with the following fields:
 
 {{
     "statement": "{statement}",
@@ -359,6 +359,7 @@ Context (information gathered from the sources):
 
 Instructions:
 - Analyze the contract description and understand the criteria for each P value (P1, P2, P3, P4).
+- Message should contain P1, P2, P3, or P4. Note that description of P4 might missing in the contract description.
 - Evaluate the evidence, context from sources, and rationale provided in the vote message.
 - Determine if the submitted P value is correct based on the contract description, evidence, and rationale.
 - If the P value is correct, state that it is correct.
@@ -372,6 +373,7 @@ Provide your response in the following JSON format:
     "confidence": "Low"/"Medium"/"High",
     "explanation": "Your explanation here."
 }}
+Return in short JSON object.
 """
         # Call the language model
         start_time = time.time()
